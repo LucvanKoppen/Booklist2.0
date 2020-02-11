@@ -104,10 +104,10 @@ class __TwigTemplate_a7b1a1fab6b08946d8beff63ae38694580690b24563ec8c19d48bd56af5
         echo "</td>
             </tr>
             <tr>
-                <th>Autor</th>
+                <th>author</th>
                 <td>";
         // line 20
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["book"]) || array_key_exists("book", $context) ? $context["book"] : (function () { throw new RuntimeError('Variable "book" does not exist.', 20, $this->source); })()), "autor", [], "any", false, false, false, 20), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["book"]) || array_key_exists("book", $context) ? $context["book"] : (function () { throw new RuntimeError('Variable "book" does not exist.', 20, $this->source); })()), "author", [], "any", false, false, false, 20), "html", null, true);
         echo "</td>
             </tr>
             <tr>
@@ -125,49 +125,50 @@ class __TwigTemplate_a7b1a1fab6b08946d8beff63ae38694580690b24563ec8c19d48bd56af5
         echo "</td>
             </tr>
             <tr>
-                <th>Reviews</th>
-                <td>
-                ";
-        // line 33
-        $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable($context["review"]);
-        $context['_iterated'] = false;
-        foreach ($context['_seq'] as $context["_key"] => $context["review"]) {
-            // line 34
-            echo "                 <a href=\"";
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("review_show", ["id" => twig_get_attribute($this->env, $this->source, $context["review"], "id", [], "any", false, false, false, 34)]), "html", null, true);
-            echo "\"> ";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["review"], "description", [], "any", false, false, false, 34), "html", null, true);
-            echo "</a> ||
-            ";
-            $context['_iterated'] = true;
-        }
-        if (!$context['_iterated']) {
-            // line 36
-            echo "                    <td colspan=\"6\">no reviews found</td>
-            ";
-        }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['review'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 38
-        echo "            </td>
             </tr>
         </tbody>
     </table>
 
+    <h2>Reviews</h2>
+    <p>
+    ";
+        // line 37
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable($context["review"]);
+        $context['_iterated'] = false;
+        foreach ($context['_seq'] as $context["_key"] => $context["review"]) {
+            // line 38
+            echo "        <a href=\"";
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("review_show", ["id" => twig_get_attribute($this->env, $this->source, $context["review"], "id", [], "any", false, false, false, 38)]), "html", null, true);
+            echo "\"> ";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["review"], "description", [], "any", false, false, false, 38), "html", null, true);
+            echo "</a> <br>
+    ";
+            $context['_iterated'] = true;
+        }
+        if (!$context['_iterated']) {
+            // line 40
+            echo "        <td colspan=\"6\">no reviews found</td>
+    ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['review'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 42
+        echo "    </p>
+
     <a href=\"";
-        // line 43
+        // line 44
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("books_index");
         echo "\">back to list</a>
 
     <a href=\"";
-        // line 45
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("books_edit", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["book"]) || array_key_exists("book", $context) ? $context["book"] : (function () { throw new RuntimeError('Variable "book" does not exist.', 45, $this->source); })()), "id", [], "any", false, false, false, 45)]), "html", null, true);
+        // line 46
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("books_edit", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["book"]) || array_key_exists("book", $context) ? $context["book"] : (function () { throw new RuntimeError('Variable "book" does not exist.', 46, $this->source); })()), "id", [], "any", false, false, false, 46)]), "html", null, true);
         echo "\">edit</a>
 
     ";
-        // line 47
+        // line 48
         echo twig_include($this->env, $context, "books/_delete_form.html.twig");
         echo "
 ";
@@ -191,7 +192,7 @@ class __TwigTemplate_a7b1a1fab6b08946d8beff63ae38694580690b24563ec8c19d48bd56af5
 
     public function getDebugInfo()
     {
-        return array (  171 => 47,  166 => 45,  161 => 43,  154 => 38,  147 => 36,  137 => 34,  132 => 33,  124 => 28,  117 => 24,  110 => 20,  103 => 16,  96 => 12,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  172 => 48,  167 => 46,  162 => 44,  158 => 42,  151 => 40,  141 => 38,  136 => 37,  124 => 28,  117 => 24,  110 => 20,  103 => 16,  96 => 12,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -214,8 +215,8 @@ class __TwigTemplate_a7b1a1fab6b08946d8beff63ae38694580690b24563ec8c19d48bd56af5
                 <td>{{ book.ISBN }}</td>
             </tr>
             <tr>
-                <th>Autor</th>
-                <td>{{ book.autor }}</td>
+                <th>author</th>
+                <td>{{ book.author }}</td>
             </tr>
             <tr>
                 <th>Title</th>
@@ -226,17 +227,18 @@ class __TwigTemplate_a7b1a1fab6b08946d8beff63ae38694580690b24563ec8c19d48bd56af5
                 <td>{{ book.price }}</td>
             </tr>
             <tr>
-                <th>Reviews</th>
-                <td>
-                {% for review in review %}
-                 <a href=\"{{ path('review_show', {'id': review.id}) }}\"> {{ review.description }}</a> ||
-            {% else %}
-                    <td colspan=\"6\">no reviews found</td>
-            {% endfor %}
-            </td>
             </tr>
         </tbody>
     </table>
+
+    <h2>Reviews</h2>
+    <p>
+    {% for review in review %}
+        <a href=\"{{ path('review_show', {'id': review.id}) }}\"> {{ review.description }}</a> <br>
+    {% else %}
+        <td colspan=\"6\">no reviews found</td>
+    {% endfor %}
+    </p>
 
     <a href=\"{{ path('books_index') }}\">back to list</a>
 

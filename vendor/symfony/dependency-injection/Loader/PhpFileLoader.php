@@ -23,7 +23,7 @@ use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigura
  */
 class PhpFileLoader extends FileLoader
 {
-    protected $autoRegisterAliasesForSinglyImplementedInterfaces = false;
+    protected $authoregisterAliasesForSinglyImplementedInterfaces = false;
 
     /**
      * {@inheritdoc}

@@ -97,7 +97,7 @@ class __TwigTemplate_1c2215ef68e35a16c9fa1ae7480889c319dc63120e00c5e478347516703
         echo "</td>
             </tr>
             <tr>
-                <th>Book_id</th>
+                <th>Book</th>
                 <td>";
         // line 16
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["review"]) || array_key_exists("review", $context) ? $context["review"] : (function () { throw new RuntimeError('Variable "review" does not exist.', 16, $this->source); })()), "Bookid", [], "any", false, false, false, 16), "html", null, true);
@@ -174,7 +174,7 @@ class __TwigTemplate_1c2215ef68e35a16c9fa1ae7480889c319dc63120e00c5e478347516703
                 <td>{{ review.id }}</td>
             </tr>
             <tr>
-                <th>Book_id</th>
+                <th>Book</th>
                 <td>{{ review.Bookid }}</td>
             </tr>
             <tr>

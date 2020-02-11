@@ -46,27 +46,41 @@ class __TwigTemplate_5c11f495b54ded9679f1ef3885ca7712ad5b3088309734f9b20a58aeada
         // line 1
         echo "<!DOCTYPE html>
 <html>
-    <head>
-        <link href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh\" crossorigin=\"anonymous\">
-        <meta charset=\"UTF-8\">
-        <title>";
-        // line 6
+<head>
+    <link href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css\" rel=\"stylesheet\"
+          integrity=\"sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh\" crossorigin=\"anonymous\">
+    <meta charset=\"UTF-8\">
+    <title>";
+        // line 7
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
-        ";
-        // line 7
-        $this->displayBlock('stylesheets', $context, $blocks);
+    ";
         // line 8
-        echo "    </head>
-    <body>
-        ";
-        // line 10
+        $this->displayBlock('stylesheets', $context, $blocks);
+        // line 9
+        echo "</head>
+<body>
+<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
+    <div class=\"container\">
+        <a class=\"navbar-brand\" href=\"/\">Home</a>
+    <div class=\"navbar-collapse\" id=\"navbarSupportedContent\">
+        <ul class=\"navbar-nav mr-auto\">
+            <li class=\"nav-item\">
+                <a class=\"nav-link\" href=\"/books\">Booklist</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav>
+<div class=\"container\">
+";
+        // line 24
         $this->displayBlock('body', $context, $blocks);
-        // line 11
-        echo "        ";
+        // line 25
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 12
-        echo "    </body>
+        // line 26
+        echo "</div>
+</body>
 </html>
 ";
         
@@ -77,7 +91,7 @@ class __TwigTemplate_5c11f495b54ded9679f1ef3885ca7712ad5b3088309734f9b20a58aeada
 
     }
 
-    // line 6
+    // line 7
     public function block_title($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -96,7 +110,7 @@ class __TwigTemplate_5c11f495b54ded9679f1ef3885ca7712ad5b3088309734f9b20a58aeada
 
     }
 
-    // line 7
+    // line 8
     public function block_stylesheets($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -114,7 +128,7 @@ class __TwigTemplate_5c11f495b54ded9679f1ef3885ca7712ad5b3088309734f9b20a58aeada
 
     }
 
-    // line 10
+    // line 24
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -132,7 +146,7 @@ class __TwigTemplate_5c11f495b54ded9679f1ef3885ca7712ad5b3088309734f9b20a58aeada
 
     }
 
-    // line 11
+    // line 25
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -157,23 +171,38 @@ class __TwigTemplate_5c11f495b54ded9679f1ef3885ca7712ad5b3088309734f9b20a58aeada
 
     public function getDebugInfo()
     {
-        return array (  136 => 11,  118 => 10,  100 => 7,  81 => 6,  69 => 12,  66 => 11,  64 => 10,  60 => 8,  58 => 7,  54 => 6,  47 => 1,);
+        return array (  150 => 25,  132 => 24,  114 => 8,  95 => 7,  82 => 26,  80 => 25,  78 => 24,  61 => 9,  59 => 8,  55 => 7,  47 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("<!DOCTYPE html>
 <html>
-    <head>
-        <link href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh\" crossorigin=\"anonymous\">
-        <meta charset=\"UTF-8\">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<head>
+    <link href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css\" rel=\"stylesheet\"
+          integrity=\"sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh\" crossorigin=\"anonymous\">
+    <meta charset=\"UTF-8\">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+</head>
+<body>
+<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
+    <div class=\"container\">
+        <a class=\"navbar-brand\" href=\"/\">Home</a>
+    <div class=\"navbar-collapse\" id=\"navbarSupportedContent\">
+        <ul class=\"navbar-nav mr-auto\">
+            <li class=\"nav-item\">
+                <a class=\"nav-link\" href=\"/books\">Booklist</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav>
+<div class=\"container\">
+{% block body %}{% endblock %}
+{% block javascripts %}{% endblock %}
+</div>
+</body>
 </html>
 ", "base.html.twig", "C:\\Users\\lvkop\\PhpstormProjects\\untitled10\\Booklist\\templates\\base.html.twig");
     }

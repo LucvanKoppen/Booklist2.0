@@ -644,9 +644,9 @@ Jan-10-2006
           <xsd:documentation>Indicates a Windows RC AUTOCHECKBOX control.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="autoradiobutton">
+      <xsd:enumeration value="authoradiobutton">
         <xsd:annotation>
-          <xsd:documentation>Indicates a Windows RC AUTORADIOBUTTON control.</xsd:documentation>
+          <xsd:documentation>Indicates a Windows RC authorADIOBUTTON control.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="bedit">

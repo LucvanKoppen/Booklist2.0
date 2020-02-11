@@ -13,7 +13,7 @@ class BooksType extends AbstractType
     {
         $builder
             ->add('ISBN')
-            ->add('autor')
+            ->add('author')
             ->add('title')
             ->add('price')
         ;

@@ -92,7 +92,7 @@ class __TwigTemplate_9eafa265b02d616dca0a51dfc2d1cc0be92041a8b8f9f4dce3599071d10
             <tr>
                 <th>Id</th>
                 <th>ISBN</th>
-                <th>Autor</th>
+                <th>author</th>
                 <th>Title</th>
                 <th>Price</th>
                 <th>actions</th>
@@ -117,7 +117,7 @@ class __TwigTemplate_9eafa265b02d616dca0a51dfc2d1cc0be92041a8b8f9f4dce3599071d10
             echo "</td>
                 <td>";
             // line 24
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "autor", [], "any", false, false, false, 24), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "author", [], "any", false, false, false, 24), "html", null, true);
             echo "</td>
                 <td>";
             // line 25
@@ -197,7 +197,7 @@ class __TwigTemplate_9eafa265b02d616dca0a51dfc2d1cc0be92041a8b8f9f4dce3599071d10
             <tr>
                 <th>Id</th>
                 <th>ISBN</th>
-                <th>Autor</th>
+                <th>author</th>
                 <th>Title</th>
                 <th>Price</th>
                 <th>actions</th>
@@ -208,7 +208,7 @@ class __TwigTemplate_9eafa265b02d616dca0a51dfc2d1cc0be92041a8b8f9f4dce3599071d10
             <tr>
                 <td>{{ book.id }}</td>
                 <td>{{ book.ISBN }}</td>
-                <td>{{ book.autor }}</td>
+                <td>{{ book.author }}</td>
                 <td>{{ book.title }}</td>
                 <td>{{ book.price }}</td>
                 <td>

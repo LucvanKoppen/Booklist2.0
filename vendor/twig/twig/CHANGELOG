@@ -1412,7 +1412,7 @@ been changed (see the source code for more information or the documentation).
 
 This release is NOT backward compatible with the previous releases.
 
-  The loaders do not take the cache and autoReload arguments anymore. Instead,
+  The loaders do not take the cache and authoreload arguments anymore. Instead,
   the Twig_Environment class has two new options: cache and auto_reload.
   Upgrading your code means changing this kind of code:
 

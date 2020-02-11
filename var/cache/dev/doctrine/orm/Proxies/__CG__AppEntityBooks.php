@@ -66,10 +66,10 @@ class Books extends \App\Entity\Books implements \Doctrine\ORM\Proxy\Proxy
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Books' . "\0" . 'id', '' . "\0" . 'App\\Entity\\Books' . "\0" . 'ISBN', '' . "\0" . 'App\\Entity\\Books' . "\0" . 'autor', '' . "\0" . 'App\\Entity\\Books' . "\0" . 'title', '' . "\0" . 'App\\Entity\\Books' . "\0" . 'price', '' . "\0" . 'App\\Entity\\Books' . "\0" . 'reviews'];
+            return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Books' . "\0" . 'id', '' . "\0" . 'App\\Entity\\Books' . "\0" . 'ISBN', '' . "\0" . 'App\\Entity\\Books' . "\0" . 'author', '' . "\0" . 'App\\Entity\\Books' . "\0" . 'title', '' . "\0" . 'App\\Entity\\Books' . "\0" . 'price', '' . "\0" . 'App\\Entity\\Books' . "\0" . 'reviews'];
         }
 
-        return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Books' . "\0" . 'id', '' . "\0" . 'App\\Entity\\Books' . "\0" . 'ISBN', '' . "\0" . 'App\\Entity\\Books' . "\0" . 'autor', '' . "\0" . 'App\\Entity\\Books' . "\0" . 'title', '' . "\0" . 'App\\Entity\\Books' . "\0" . 'price', '' . "\0" . 'App\\Entity\\Books' . "\0" . 'reviews'];
+        return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Books' . "\0" . 'id', '' . "\0" . 'App\\Entity\\Books' . "\0" . 'ISBN', '' . "\0" . 'App\\Entity\\Books' . "\0" . 'author', '' . "\0" . 'App\\Entity\\Books' . "\0" . 'title', '' . "\0" . 'App\\Entity\\Books' . "\0" . 'price', '' . "\0" . 'App\\Entity\\Books' . "\0" . 'reviews'];
     }
 
     /**
@@ -216,23 +216,23 @@ class Books extends \App\Entity\Books implements \Doctrine\ORM\Proxy\Proxy
     /**
      * {@inheritDoc}
      */
-    public function getAutor(): ?string
+    public function getauthor(): ?string
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getAutor', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getauthor', []);
 
-        return parent::getAutor();
+        return parent::getauthor();
     }
 
     /**
      * {@inheritDoc}
      */
-    public function setAutor(string $autor): \App\Entity\Books
+    public function setauthor(string $author): \App\Entity\Books
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setAutor', [$autor]);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setauthor', [$author]);
 
-        return parent::setAutor($autor);
+        return parent::setauthor($author);
     }
 
     /**

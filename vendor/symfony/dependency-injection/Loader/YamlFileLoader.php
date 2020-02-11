@@ -110,7 +110,7 @@ class YamlFileLoader extends FileLoader
     private $anonymousServicesCount;
     private $anonymousServicesSuffix;
 
-    protected $autoRegisterAliasesForSinglyImplementedInterfaces = false;
+    protected $authoregisterAliasesForSinglyImplementedInterfaces = false;
 
     /**
      * {@inheritdoc}

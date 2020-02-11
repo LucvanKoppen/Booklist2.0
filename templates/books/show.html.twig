@@ -16,8 +16,8 @@
                 <td>{{ book.ISBN }}</td>
             </tr>
             <tr>
-                <th>Autor</th>
-                <td>{{ book.autor }}</td>
+                <th>author</th>
+                <td>{{ book.author }}</td>
             </tr>
             <tr>
                 <th>Title</th>
@@ -28,17 +28,18 @@
                 <td>{{ book.price }}</td>
             </tr>
             <tr>
-                <th>Reviews</th>
-                <td>
-                {% for review in review %}
-                 <a href="{{ path('review_show', {'id': review.id}) }}"> {{ review.description }}</a> ||
-            {% else %}
-                    <td colspan="6">no reviews found</td>
-            {% endfor %}
-            </td>
             </tr>
         </tbody>
     </table>
+
+    <h2>Reviews</h2>
+    <p>
+    {% for review in review %}
+        <a href="{{ path('review_show', {'id': review.id}) }}"> {{ review.description }}</a> <br>
+    {% else %}
+        <td colspan="6">no reviews found</td>
+    {% endfor %}
+    </p>
 
     <a href="{{ path('books_index') }}">back to list</a>
 

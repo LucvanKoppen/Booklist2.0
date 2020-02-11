@@ -20,6 +20,7 @@ return [
     'books_show' => [['id'], ['_controller' => 'App\\Controller\\BooksController::show'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/books']], [], []],
     'books_edit' => [['id'], ['_controller' => 'App\\Controller\\BooksController::edit'], [], [['text', '/edit'], ['variable', '/', '[^/]++', 'id', true], ['text', '/books']], [], []],
     'books_delete' => [['id'], ['_controller' => 'App\\Controller\\BooksController::delete'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/books']], [], []],
+    'home' => [[], ['_controller' => 'App\\Controller\\HomeController::index'], [], [['text', '/']], [], []],
     'review_index' => [[], ['_controller' => 'App\\Controller\\ReviewController::index'], [], [['text', '/review/']], [], []],
     'review_new' => [[], ['_controller' => 'App\\Controller\\ReviewController::new'], [], [['text', '/review/new']], [], []],
     'review_show' => [['id'], ['_controller' => 'App\\Controller\\ReviewController::show'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/review']], [], []],

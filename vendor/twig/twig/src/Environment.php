@@ -48,7 +48,7 @@ class Environment
     private $charset;
     private $loader;
     private $debug;
-    private $autoReload;
+    private $authoreload;
     private $cache;
     private $lexer;
     private $parser;
@@ -111,7 +111,7 @@ class Environment
 
         $this->debug = (bool) $options['debug'];
         $this->setCharset($options['charset'] ?? 'UTF-8');
-        $this->autoReload = null === $options['auto_reload'] ? $this->debug : (bool) $options['auto_reload'];
+        $this->authoreload = null === $options['auto_reload'] ? $this->debug : (bool) $options['auto_reload'];
         $this->strictVariables = (bool) $options['strict_variables'];
         $this->setCache($options['cache']);
         $this->extensionSet = new ExtensionSet();
@@ -152,17 +152,17 @@ class Environment
     /**
      * Enables the auto_reload option.
      */
-    public function enableAutoReload()
+    public function enableauthoreload()
     {
-        $this->autoReload = true;
+        $this->authoreload = true;
     }
 
     /**
      * Disables the auto_reload option.
      */
-    public function disableAutoReload()
+    public function disableauthoreload()
     {
-        $this->autoReload = false;
+        $this->authoreload = false;
     }
 
     /**
@@ -170,9 +170,9 @@ class Environment
      *
      * @return bool true if auto_reload is enabled, false otherwise
      */
-    public function isAutoReload()
+    public function isauthoreload()
     {
-        return $this->autoReload;
+        return $this->authoreload;
     }
 
     /**
@@ -338,7 +338,7 @@ class Environment
         if (!class_exists($cls, false)) {
             $key = $this->cache->generateKey($name, $mainCls);
 
-            if (!$this->isAutoReload() || $this->isTemplateFresh($name, $this->cache->getTimestamp($key))) {
+            if (!$this->isauthoreload() || $this->isTemplateFresh($name, $this->cache->getTimestamp($key))) {
                 $this->cache->load($key);
             }
 
